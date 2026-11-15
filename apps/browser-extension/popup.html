@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Proper Gander</title>
+		<link rel="stylesheet" href="popup.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="brand">
+				<img class="mark" src="icon.png" alt="Proper Gander" width="22" height="22" />
+				<span class="name">proper gander</span>
+			</div>
+			<p class="lede">Discreet context overlays on your social feeds.</p>
+
+			<label class="row">
+				<span class="row-text"><strong>Overlays</strong><small>Show context badges on posts</small></span>
+				<button id="toggle" class="switch" type="button" aria-pressed="true"><span class="knob"></span></button>
+			</label>
+
+			<label class="field">
+				<span>Proper Gander web app URL</span>
+				<input id="appUrl" type="url" placeholder="https://your-proper-gander-site.example" />
+			</label>
+			<p class="hint">Pre-filled with your Proper Gander site. Used for “Learn the techniques” links and AI fact-checking.</p>
+
+			<label class="field">
+				<span>Link token (for AI fact-checking)</span>
+				<input id="token" type="password" placeholder="Paste your Proper Gander link token" autocomplete="off" />
+			</label>
+			<p class="hint">Generate one in Proper Gander → Settings → Browser extension. Required to verify posts with the AI agent.</p>
+
+			<a id="openApp" class="btn" href="#" target="_blank" rel="noreferrer">Open Proper Gander workspace ↗</a>
+
+			<p class="status" id="status"></p>
+		</div>
+		<script src="popup.js"></script>
+	</body>
+</html>

@@ -1,0 +1,120 @@
+.wrap {
+	font-family: Manrope, system-ui, sans-serif;
+	width: 280px;
+	background: #faf9f7;
+	color: #4c3959;
+	padding: 18px 16px 16px;
+	margin: 0;
+}
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	font-size: 18px;
+	font-weight: 800;
+	letter-spacing: -0.8px;
+	color: #4c3959;
+}
+.brand .mark {
+	width: 22px;
+	height: 22px;
+	border-radius: 5px;
+	object-fit: cover;
+}
+.lede {
+	font-size: 11px;
+	line-height: 1.6;
+	color: #8a7d94;
+	margin: 8px 0 16px;
+}
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 10px 0;
+	border-top: 1px solid #ece4ef;
+}
+.row-text strong {
+	display: block;
+	font-size: 12px;
+	font-weight: 600;
+}
+.row-text small {
+	display: block;
+	font-size: 10px;
+	color: #9c8aa6;
+	margin-top: 2px;
+}
+.switch {
+	width: 38px;
+	height: 22px;
+	border: 0;
+	border-radius: 14px;
+	background: #ddd0e5;
+	padding: 3px;
+	cursor: pointer;
+	flex-shrink: 0;
+	transition: background 0.18s ease;
+}
+.switch .knob {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: #fff;
+	display: block;
+	transition: transform 0.18s ease;
+}
+.switch[aria-pressed='true'] {
+	background: #9e7db0;
+}
+.switch[aria-pressed='true'] .knob {
+	transform: translateX(16px);
+}
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	margin-top: 12px;
+	font-size: 11px;
+	font-weight: 600;
+	color: #786982;
+}
+.field input {
+	width: 100%;
+	border: 1px solid #e1d8e6;
+	border-radius: 7px;
+	padding: 9px 10px;
+	font: 400 12px Manrope, system-ui, sans-serif;
+	color: #4c3959;
+	background: #fff;
+}
+.hint {
+	font-size: 9px;
+	line-height: 1.5;
+	color: #a99bb3;
+	margin: 5px 0 0;
+}
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
+	margin-top: 14px;
+	padding: 10px;
+	border-radius: 7px;
+	background: #4c3959;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.btn:hover {
+	background: #60466f;
+}
+.status {
+	font-size: 10px;
+	color: #6f8a5e;
+	margin: 10px 0 0;
+	min-height: 14px;
+}
